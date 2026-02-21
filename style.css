@@ -1,0 +1,230 @@
+body{
+    max-width: 1920px;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient( rgb(40, 49, 128), rgb(9, 0, 70));
+}
+
+.cabecalho{
+    display: flex;
+    padding: 20px;
+}
+
+.logo{
+    width: 500px;
+}
+
+.conteudotodo{
+    color: rgb(9, 0, 70);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.title1 {
+    margin-top: 60px;
+}
+
+.msg1{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.imgtop{
+    margin-top: 40px;
+    width: 550px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 4px rgb(168, 167, 167);
+} 
+
+.mensagem{
+    width: 600px;
+}
+
+.fontes{
+    font-size: 13px;
+    margin-top: 5px;
+    text-align: end;
+}
+
+.instaleg {
+    background: rgb(9, 0, 70);
+    padding: 10px 19px 10px 19px;
+    text-decoration: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.instaleg:hover{
+    background: rgb(17, 0, 129);
+}
+
+
+.conteudocat{
+    background: rgb(241, 241, 241);
+}
+
+.categorias{
+    margin-top: 50px;
+    gap: 70px;
+    justify-content: center;
+    display: flex;
+}
+
+.icons{
+    width: 200px;
+    border: solid white;
+}
+
+.icons:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.titlecat{
+    margin-top: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(9, 0, 70);
+}
+
+.iconscat{
+    color: rgb(9, 0, 70);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.legcat{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.display-6{
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: linear-gradient( rgb(40, 49, 128), rgb(9, 0, 70));
+    padding: 50px 1px 50px 1px;
+    border-radius: 20px;
+
+}
+
+.produto{
+    width: 240px;
+    margin: 15px;
+    border-radius: 30px;
+    
+}
+
+.card{
+    margin-top: 10px;
+    align-items: center;
+    width: 275px;
+    color: rgb(9, 0, 70);;
+    font-family:Helvetica;
+    box-shadow: 1px 3px 10px 1px rgb(219, 219, 219);
+    border-radius: 30px;
+    transition: 0.8s;
+
+}
+
+.name{
+    margin-top: 10px;
+    font-size: 23px;
+    text-align: center;
+}
+
+.price{
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 22px;
+    color: rgb(9, 0, 70);
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.produtos{
+    margin-top: 40px;
+    justify-content: center;
+    gap: 50px;
+    display: grid; /*isso aqui cria uma grade*/
+    grid-template-columns: repeat(4, 1fr); /*isso aqui faz uma linha de 4 cards*/
+}
+
+.footer{
+    height: 150px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( rgb(40, 49, 128), rgb(9, 0, 70));
+}
+
+.botaofixo{
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    text-decoration: none;
+    background: linear-gradient( rgb(40, 49, 128), rgb(9, 0, 70));
+    padding: 10px 15px;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    z-index: 9999; /*Faz ele ficar a frente de todoss elementos*/
+
+
+}
+
+.botaofixo:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
+
+}
+
+/* celular */
+@media (max-width:768px){
+    .cabecalho{
+        justify-content: center;
+    }
+
+    .logo{
+        width: 200px;
+    }
+
+    .conteudotodo{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .imgtop{
+        width: 100%;
+        
+    }
+
+    .mensagem{
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .msg1{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}
