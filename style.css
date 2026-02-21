@@ -198,33 +198,69 @@ header{
 
 /* celular */
 @media (max-width:768px){
-    .cabecalho{
-        justify-content: center;
-    }
 
-    .logo{
-        width: 200px;
-    }
-
-    .conteudotodo{
+    /* categorias */
+    .categorias{
         flex-direction: column;
-        text-align: center;
-        
+        align-items: center;
+        gap: 30px;
     }
 
-    .imgtop{
+    .icons{
+        width: 150px;
+    }
+
+    .legcat{
+        font-size: 22px;
+    }
+
+    .titlecat{
+        font-size: 32px;
+    }
+
+    /* títulos grandes */
+    .display-6{
+        font-size: 22px;
+        padding: 25px 10px;
+        border-radius: 15px;
+    }
+
+    /* produtos */
+    .produtos{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .card{
+        width: 90%;
+        margin: auto;
+    }
+
+    .produto{
         width: 100%;
-        
     }
 
-    .mensagem{
-        width: 100%;
-        font-size: 10px;
+    .name{
+        font-size: 20px;
     }
 
-    .msg1{
-        margin-left: 5%;
-        margin-right: 5%;
+    .price{
+        font-size: 20px;
+    }
+
+    /* botão fixo */
+    .botaofixo{
+        right: 20px;
+        bottom: 15px;
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    /* footer */
+    .footer{
+        font-size: 14px;
+        padding: 20px;
+        height: auto;
     }
 
 }
